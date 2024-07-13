@@ -1,0 +1,51 @@
+<html>
+	<script src="script.js"></script>
+	<script type="classes.js"></script>
+	<style>
+
+		body {
+			display: flex;
+			background: black;
+			color: white;
+			height: 100%;
+			width: 100%;
+		}
+
+		#content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 60%;
+			height: 100%;
+			flex-direction: column;
+			padding: 5px;
+		}
+		#text-body{
+			width: fit-content;
+			max-height: 70%;
+			height: fit-content;
+			text-align: center;
+			overflow: auto;
+			padding: 10;
+		}
+		#user-input {
+			color: green;
+		}
+		#warning {
+			color: red;
+		}#spacer {
+			width: 20%;
+			height: 100%;
+			padding: 5px;
+		}
+	</style>
+	<body>
+		<div id = 'spacer'></div>
+		<div id='content'>
+			<div id="text-body"></div>
+			<div><br></div>
+			<input type="text" name="text-input" id="cli" onkeypress="parseInput(event)">
+		</div>
+		<div id = 'spacer'></div>
+	</body>
+</html>
